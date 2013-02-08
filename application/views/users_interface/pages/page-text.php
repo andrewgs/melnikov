@@ -37,6 +37,7 @@
 						<a class="jscroll-next" href="<?=site_url("text-load/$page/from/$offset");?>">Еще ...</a>
 					<?php endif;?>
 					</div>
+					<div class="New-Request"></div>
 				</div>
 			</div>
 		</div>
@@ -53,7 +54,7 @@
 				loadingHtml: '<img src="<?=site_url("/images/loader.gif/")?>" alt="Loading />',
 				padding: 20,
 				nextSelector: '.jscroll-next:last',
-				contentSelector: 'li'
+				contentSelector: ''
 			});
 		<?php endif;?>
 		})

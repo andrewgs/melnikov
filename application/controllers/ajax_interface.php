@@ -76,10 +76,10 @@ class Ajax_interface extends MY_Controller{
 			$html .= '<h4 style="color:#ff0000">'.$content[$i]['title'].'</h4>';
 			$html .= '<p>'.blog_limiter($content[$i]['content']).'</p>';
 		endfor;
-//		if($next_items):
+		if($next_items):
 			$offset = $this->per_page+$this->offset+1;
 			$html .= '<a class="jscroll-next" href="'.site_url("text-load/".$this->uri->segment(2)."/from/$offset").'">Еще ...</a>';
-//		endif;
+		endif;
 		echo $html;
 	}
 
