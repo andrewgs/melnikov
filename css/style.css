@@ -1,0 +1,29 @@
+/*!
+ * Style.css v1.0
+ * Copyright 2012 Grapheme
+ * http://grapheme.ru/
+ */
+
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0}
+.popup.become-enter { right: -7.5em; top: 4em; }
+.popup-form { background: #FAFAFA; color: #3E3E3E; font-size: 0.75em; padding: 1em; width: 17em; border: 1px solid #eee; border-radius: 2px; }
+.popup-form fieldset {border: 0 none; padding-bottom: 3px }
+.popup-form label span {color: #70b611}
+.popup-form label { font-size: 13px; }
+.popup-form .validate label,
+.popup-form .validate label span {font-weight: 700; color: #d10000; }
+.popup-form input,
+.popup-form textarea { display: block; width: 148px; background: #fff; border-radius: 2px; padding: 6px 8px; border: 1px solid #eee; font: italic 14px Corbel, Arial, Helvetica, sans-serif; box-shadow: none; }
+.popup-form textarea { height: 51px; padding: 2px 3px; }
+.popup-form .submit button { background: #FE9903; color: #fff; border: 1px solid #f29204; border-radius: 2px; padding: 0.5em 1em; margin-top: 0.5em; cursor: pointer; text-decoration: none; display: inline-block; width: 162px; }
+.popup-form .submit button:hover { }
+.popup-form .submit:active { position: relative; top: 1px; }
+.popup-form .submitted { background: none }
+.popup-form .submitted button { display: none }
+.popup-form .submit.disabled button { cursor: default }
+
+cut{display: none;}
+.thumbnail p{font: 10px/14px Arial, Tahoma, Verdana, sans-serif;}
+.TopNavigation a{font: 12px/20px Arial, Tahoma, Verdana, sans-serif;}
+
+.no-display{ display: none;}
