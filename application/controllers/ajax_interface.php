@@ -2,7 +2,7 @@
 
 class Ajax_interface extends MY_Controller{
 	
-	var $per_page = 3;
+	var $per_page = 1;
 	var $offset = 0;
 	
 	function __construct(){
@@ -69,16 +69,16 @@ class Ajax_interface extends MY_Controller{
 		endif;
 		$this->offset = $this->uri->segment(4);
 		$content = $this->pages->read_limit_records($this->uri->segment(2),$this->per_page,$this->offset);
-		$next_items = $this->pages->exist_next_records($this->uri->segment(2),$this->per_page+$this->offset+1);
+		$next_items = $this->pages->exist_next_records($this->uri->segment(2),$this->per_page+$this->offset);
 		$html = '';
 		$this->load->helper('text');
 		for($i=0;$i<count($content);$i++):
 			$html .= '<h4 style="color:#ff0000">'.$content[$i]['title'].'</h4>';
-			$html .= '<p>'.blog_limiter($content[$i]['content']).'</p>';
+			$html .= blog_limiter($content[$i]['content']);
 		endfor;
 		if($next_items):
-			$offset = $this->per_page+$this->offset+1;
-			$html .= '<a class="jscroll-next" href="'.site_url("text-load/".$this->uri->segment(2)."/from/$offset").'">Еще ...</a>';
+			$offset = $this->per_page+$this->offset;
+			$html .= '<div class="next"><a href="'.site_url("text-load/".$this->uri->segment(2)."/from/$offset").'">Еще ...</a></div>';
 		endif;
 		echo $html;
 	}

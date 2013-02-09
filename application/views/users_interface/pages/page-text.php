@@ -25,7 +25,7 @@
 					<div class="infinite-scroll">
 					<?php for($i=0;$i<count($content);$i++):?>
 						<h4><?=$content[$i]['title'];?></h4>
-						<p><?=blog_limiter($content[$i]['content']);?></p>
+						<?=blog_limiter($content[$i]['content']);?>
 					<?php endfor;?>
 					<?php if($this->uri->total_segments() == 2):?>
 						<?php $page = $this->uri->segment(2);?>
@@ -33,11 +33,12 @@
 						<?php $page = $this->uri->segment(1);?>
 					<?php endif;?>
 					<?php if($next_items):?>
-						<?php $offset = $this->per_page+$this->offset+1;?>
-						<a class="jscroll-next" href="<?=site_url("text-load/$page/from/$offset");?>">Еще ...</a>
+						<?php $offset = $this->per_page+$this->offset;?>
+						<div class="next">
+							<a href="<?=site_url("text-load/$page/from/$offset");?>">Еще ...</a>
+						</div>
 					<?php endif;?>
 					</div>
-					<div class="New-Request"></div>
 				</div>
 			</div>
 		</div>
@@ -52,8 +53,8 @@
 		<?php if($next_items):?>
 			$(".infinite-scroll").jscroll({
 				loadingHtml: '<img src="<?=site_url("/images/loader.gif/")?>" alt="Loading />',
-				padding: 20,
-				nextSelector: '.jscroll-next:last',
+				padding: 40,
+				nextSelector: '.next a:last',
 				contentSelector: ''
 			});
 		<?php endif;?>
