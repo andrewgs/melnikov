@@ -2,7 +2,7 @@
 
 class Users_interface extends MY_Controller{
 	
-	var $per_page = 3;
+	var $per_page = 5;
 	var $offset = 0;
 	
 	function __construct(){
@@ -119,7 +119,11 @@ class Users_interface extends MY_Controller{
 	
 	public function family_series(){
 		
-		$this->load->view("users_interface/pages/page-text",array('content'=>$this->pages->read_record($this->uri->segment(2))));
+		$pagevar = array(
+			'content' => $this->pages->read_limit_records($this->uri->segment(2),$this->per_page,$this->offset),
+			'next_items' => $this->pages->exist_next_records($this->uri->segment(2),$this->per_page+$this->offset+1)
+		);
+		$this->load->view("users_interface/pages/page-text",$pagevar);
 	}
 	
 	/***************************************************** END PAGES ****************************************************/

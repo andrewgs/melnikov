@@ -236,7 +236,7 @@ class Admin_interface extends MY_Controller{
 					$replacement = "\$3-\$2-\$1";
 					$insert['date'] = preg_replace($pattern,$replacement,$insert['date']);
 					$this->review->insert_record($insert);
-					$this->image_manupulation(getcwd().'/'.$insert['photo'],'width',TRUE,781,521);
+//					$this->image_manupulation(getcwd().'/'.$insert['photo'],'width',TRUE,781,521);
 				endif;
 				redirect($this->uri->uri_string());
 			endif;
@@ -326,7 +326,7 @@ class Admin_interface extends MY_Controller{
 					$insert['title'] = htmlspecialchars($titles['title'][$i]);
 					$insert['link'] = 'images/download/'.$image_info['file_name'];
 					$this->images->insert_record($insert);
-					$this->image_manupulation(getcwd().'/'.$insert['link'],'width',TRUE,781,521);
+//					$this->image_manupulation(getcwd().'/'.$insert['link'],'width',TRUE,781,521);
 				endif;
 			endfor;
 			redirect($this->uri->uri_string());

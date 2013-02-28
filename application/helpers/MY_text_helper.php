@@ -3,8 +3,8 @@
 	function blog_limiter($content){
 		
 		if(!empty($content)):
-			$pattern = '/\<cut\>/i';
-			$replacement = '<a href="#" class="none advanced muted">Подробнее ...</a> <cut>';
+			$pattern = "/\<cut text\=\"(.+?)\">/i";
+			$replacement = "<a href=\"#\" class=\"none advanced muted\">\$1</a> <cut>";
 			return preg_replace($pattern, $replacement,$content);
 		else:
 			return '';
