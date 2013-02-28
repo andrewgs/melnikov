@@ -19,7 +19,7 @@
 			<?php $this->load->view("users_interface/includes/aside");?>
 			
 			<div id="main">
-				<div class="span8">
+				<div class="span9">
 					<div class="review">
 					<?php $this->load->helpers('date');?>
 					<?php $this->load->helper('text');?>
@@ -27,8 +27,11 @@
 						<div class="row">
 						<?php $result=$reviews[$i]['id']%2; ?>
 						<?php if($result!=0): ?>
-							<div class="span2">
-								<img id="review-pic-1" src="<?=site_url($reviews[$i]['photo']);?>">
+							<div class="span3">
+								<div class="review-wrapper">
+									<img id="review-pic-1" src="<?=site_url($reviews[$i]['photo']);?>">
+									<div class="review-frame"> </div>
+								</div>
 							</div>
 						<?php endif;?>
 							<div class="span6">
@@ -38,8 +41,11 @@
 								</p>
 							</div>
 						<?php if($result===0): ?>
-							<div class="span2">
-								<img id="review-pic-1" src="<?=site_url($reviews[$i]['photo']);?>">
+							<div class="span3">
+								<div class="review-wrapper" style="float: right;">
+									<img id="review-pic-1" src="<?=site_url($reviews[$i]['photo']);?>">
+									<div class="review-frame"> </div>
+								</div>
 							</div>
 						<?php endif;?>
 						</div>

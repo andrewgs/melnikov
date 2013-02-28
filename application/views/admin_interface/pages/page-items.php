@@ -27,16 +27,17 @@
 					</div>
 				</div>
 				<div class="clear"></div>
-				<a class="btn btn-info pull-right" href="<?=site_url($current_uri);?>/insert-item"><i class="icon-plus icon-white"></i> Новая запись</a>
+				<p class="clearfix">
+					<a class="btn btn-info pull-right" href="<?=site_url($current_uri);?>/insert-item"><i class="icon-plus icon-white"></i> Новая запись</a>
+				</p>
 				<div class="clear"></div>
 				<table class="table table-condensed">
-					<caption>Текстовые блоки</caption>
 					<thead>
 						<tr>
 							<th class="span1">№</th>
 							<th class="span6">Название</th>
 							<th class="span2">Дата</th>
-							<th class="span1">Упаравление</th>
+							<th class="span3">Управление</th>
 						</tr>
 					</thead>
 					<tbody>

@@ -1,5 +1,5 @@
 body {
-    background: #F1EED8;
+    /*background: #F1EED8;*/
     font-family: Arial, Helvetica, sans-serif;
     color: #444444;
     font-size: 13px;
@@ -10,9 +10,10 @@ body {
 p { margin: 0 0 1.5em }
 .container { background: #fff; position: relative; }
 header #logo {
-    margin-left: 5em;
+    margin-left: 0;
     margin-top: 2.5em;
 }
+nav ul { margin: 0 0 0 10px; padding: 0; }
 nav ul li {
     list-style: none;
     color: #666;
@@ -27,11 +28,11 @@ header nav ul li {
 }
 header nav {
     float: right;
-    margin-top: 3em;
+    margin: 1em 0 0 0;
 }
 header { margin-bottom: 1em }
 .intro {
-    font-family: Franklin Gothic Medium, Arial Narrow Bold, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 18px;
 }
 footer {
@@ -44,10 +45,7 @@ nav a {
     text-decoration: none;
     color: #868686;
 }
-nav {
-    margin-top: -1em;
-    margin-left: 4em;
-}
+nav { }
 a:hover {
     color: #fe9903;
     text-decoration: none;
@@ -63,15 +61,12 @@ a:hover {
     margin-left: 2em;
 }
 footer p {
-    float: left;
     margin-top: 4em;
 }
-.melnikov {
-    margin-left: 9.5em;
-    margin-right: 55em;
-}
+.melnikov { }
+.copy { text-align: right; }
 
-.aside-text { margin-top: 14.5em; margin-left: 6em; }
+.aside-text { margin-top: 8.25em; margin-left: 10px; }
 .aside-text p { color: #868686; font: 15px Corbel, Arial, Helvetica, sans-serif; margin-bottom: 0.5em; }
 #slideshow { width: auto; height: 513px; margin-bottom: 15px;  }
 #slideshow img { border-radius: 2px;  background: #fff; padding: 5px; }
@@ -81,10 +76,15 @@ p.email a { line-height: 1.25em; color: #666; }
 p.email a:hover { text-decoration: underline; color: #4d4d4d; }
 p.email { margin-bottom: 1em;  }
 p.tel { font: 13px Arial, Helvetica, sans-serif; margin-top: 1em; }
-.pict { margin-left: 6em; }
-	.pict img { margin-left: 0.3em; }
-	.pict a { display: inline-block; color: #868686; font: 14px/1.25em Corbel, Arial, Helvetica, sans-serif; margin-bottom: 0.5em; }
+.pict { margin-left: 10px; }
+	.pict a { display: inline-block; width: 24px; height: 24px; background: url('../images/social-sprites.png') no-repeat; color: #868686; font: 14px/1.25em Corbel, Arial, Helvetica, sans-serif; margin: 0 0.1em 0 0; text-indent: -9999px; }
 	.pict a:hover { text-decoration: underline; color: #4d4d4d; }
+	.pict a.500px { background-position: 0 0; }
+	.pict a.fb { background-position: -48px 0; }
+	.pict a.vk { background-position: -96px 0; }
+	.pict a.twitter { background-position: -24px 0; }
+	.pict a.gplus { background-position: -72px 0; }
+	.pict a.classmates { background-position: -120px 0; }
 	
 li.active a { color: #fe9903 }
 .en {
@@ -95,7 +95,7 @@ li.active a { color: #fe9903 }
 .en p {
     color: #bbbbbb;
     font-size: 12px;
-    font-family: Franklin Gothic Medium, Arial Narrow Bold, Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 #gallery li {
     width: 150px;
@@ -112,13 +112,13 @@ li.active a { color: #fe9903 }
 /*.jcarousel-skin-tango { height: 230px }*/
 p.review-pic-text {
     color: #888;
-    font: 13px/1.5em Arial Narrow Bold, Arial, sans-serif;
+    font: 13px/1.5em Arial, sans-serif;
     margin-top: 2em;
 }
 p.review-pic-id {
     color: #9e9c9c;
     font-size: 11px;
-    font-family: Verdana, Arial Narrow Bold, Arial, sans-serif;
+    font-family: Verdana, Arial, sans-serif;
     margin-top: 0.7em;
 }
 .review {
@@ -126,10 +126,10 @@ p.review-pic-id {
     border-bottom: 1px solid #cbc9ca;*/
     line-height: 1.3em;
 }
-.review img { margin-top: 0.3em }
-.review #review-pic-1 { margin-top: 2em }
-.review #review-pic-2 { margin-top: 1em }
-.review #review-pic-3 { margin-bottom: 2em }
+.review img { }
+.review #review-pic-1 { }
+.review #review-pic-2 { }
+.review #review-pic-3 { }
 a.under { border-bottom: 1px dotted #868686; line-height: 1.25em; color: #868686; }
 a.under:hover { color: #555; border-bottom: 1px solid transparent; } 
 a { color: #666666 }
@@ -148,23 +148,31 @@ a { color: #666666 }
 
 h1 {
     color: #555;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
     margin: 0 0 0.65em;
     text-transform: none;
     font-size: 32px;
-    font-weight: normal;
+    font-weight: 400;
     /*text-transform: uppercase;*/
 }
 h2 {
     color: #444444;
-    font-family: "Franklin Gothic Book";
-    font-size: 24px;
-    margin: 1em 0 0.4em;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    font-size: 28px;
+	margin: 0 0 0.5em;
+    font-weight: 400;
+}
+h3 {
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    color: #444;
+    font-weight: 400;
+    font-size: 22px;
 }
 h4 {
     color: #444444;
-    font-family: "Franklin Gothic Book";
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
     font-size: 20px;
+    font-weight: 400;
 }
 .about-text { width: 650px; color: gray; }
 p.about-info-small {
@@ -182,11 +190,6 @@ p.about-info-small a { color: #fe9903 }
     color: #868686;
     font-size: 14px;
     width: 700px;
-}
-h3 {
-    color: #444444;
-    font-family: "Franklin Gothic Book";
-    font-size: 22px;
 }
 p.date {
     margin-top: -1.5em;
@@ -221,13 +224,12 @@ p.small-text {
     font-family: Verdana, Arial Narrow Bold, Arial, sans-serif;
     font-size: 12px;
     float: right;
-    margin-right: -2.5em;
     display: inline-block;
 }
 .video2 iframe { margin-bottom: 0.5em; padding: 8px; background: #e0e0e0; border: 1px solid #ccc; border-radius: 1px; }
 .name-date-1 {
     color: #7f7f7f;
-    font-family: Franklin Gothic Medium, Arial Narrow Bold, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 12px;
 }
 #name-date-under { margin-top: -1.3em }
@@ -236,7 +238,7 @@ p.poly-text-column {
     color: #777777;
     font-size: 13px;
     line-height: 17px;
-    font-family: Franklin Gothic Medium, Arial Narrow Bold, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     width: 25em;
     margin-bottom: 1.7em;
 }
@@ -245,7 +247,7 @@ p.poly-text {
     font-size: 13px;
     line-height: 17px;
     margin-top: 2em;
-    font-family: Franklin Gothic Medium, Arial Narrow Bold, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     width: 25em;
 }
 .poly-column p.poly-text { margin-top: 0em }
@@ -274,3 +276,7 @@ p.poly-text {
 }
 .clearfix:after { clear: both }
 .clearfix { zoom: 1 }
+
+center { text-align: left !important; }
+.review-wrapper { width: 170px; height: 170px; position: relative; }
+	.review-frame { position: absolute; top: 0; left: 0; background: url('../images/review-frame.png') no-repeat; width: 170px; height: 170px; }

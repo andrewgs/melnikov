@@ -6,7 +6,7 @@
 				<li class="family"><?=anchor('family','Семья');?></li>
 				<li class="portrait"><?=anchor('portrait','Портрет');?></li>
 				<li class="fashion"><?=anchor('fashion','Fashion');?></li>
-				<li class="landscape"><?=anchor('landscape','Пейзаж');?></li>
+				<li class="landscape"><?=anchor('landscape','Природа');?></li>
 				<li class="reportage"><?=anchor('reportage','Репортаж');?></li>
 				<li class="genre"><?=anchor('genre','Жанр');?></li>
 				<li class="blog"><a href="http://melnikof.livejournal.com/" target="_blank"> Блог</a></li>
@@ -19,11 +19,11 @@
 			<p class="email"><?=safe_mailto('melnikofd@yandex.ru','melnikofd@yandex.ru');?></p>
 		</div>
 		<div class="pict">
-			<?=anchor('','500px');?> / 
-			<?=anchor('','Facebook');?> / 
-			<?=anchor('','Google+');?>
-			<?=anchor('','Одноклассники');?> / 
-			<?=anchor('','Вконтакте');?>
+			<?=anchor('http://500px.com/Melnikof','500px', array('class' => 'social 500px'));?> 
+			<?=anchor('http://www.facebook.com/profile.php?id=100000587533040','Facebook', array('class' => 'social fb'));?> 
+			<?=anchor('','Google+', array('class' => 'social gplus'));?>
+			<?=anchor('','Одноклассники', array('class' => 'social classmates'));?> 
+			<?=anchor('http://vkontakte.ru/melnikof_foto','Вконтакте', array('class' => 'social vk'));?>
 		</div>
 	</div>
 </aside>

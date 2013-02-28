@@ -5,7 +5,6 @@
 <script type="text/javascript" src="<?=site_url('js/scripts.js');?>"></script>
 <script type="text/javascript">
 	$(function(){
-		Cufon.replace("h1");Cufon.replace("h2");Cufon.replace("h3");Cufon.replace("h4");
 		$(".backpath").click(function(){backpath("<?=$this->session->userdata('backpath');?>")});
 	<?php if($this->uri->uri_string() == '' || $this->uri->segment(1) == 'marriage'):?>
 		$("li[class='home']").addClass('active');

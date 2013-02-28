@@ -20,30 +20,14 @@
 			
 			<div id="main">
 				<div class="span8">
-					<h1>Слайд-шоу</h1>
-					<p class="intro">
-						Семейное видео помогает сохранить память о самых счастливых моментах жизни. Оно будет радовать Вас своим
-						оформлением и высоким качеством изготовления.
-					</p>
 					<?php $this->load->helpers('date');?>
-				<?php for($i=0;$i<count($video);$i=$i+2):?>
+				<?php for($i=0;$i<count($video);$i++):?>
 					<div class="row">
-						<div class="span5 video2">
+						<div class="span9 video2">
+							<h2><?=$video[$i]['title'];?> <span class="name-date"><?=swap_dot_date($video[$i]['date']);?></span></h2>
 							<?=$video[$i]['link'];?>
-							<p class="name">
-								<?=$video[$i]['title'];?>
-								<span class="name-date"><?=swap_dot_date($video[$i]['date']);?></span>
-							</p>
+							<p><?=$video[$i]['note'];?></p>
 						</div>
-						<?php if(isset($video[$i+1]['id'])):?>
-						<div class="span4 video2">
-							<?=$video[$i+1]['link'];?>
-							<p class="name">
-								<?=$video[$i+1]['title'];?>
-								<span class="name-date"><?=swap_dot_date($video[$i+1]['date']);?></span>
-							</p>
-						</div>
-						<?php endif;?>
 					</div>
 				<?php endfor;?>
 				</div>
