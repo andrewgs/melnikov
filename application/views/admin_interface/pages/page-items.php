@@ -22,6 +22,8 @@
 						<?php elseif($this->uri->segment(3) == 'family'):?>
 							<li num="children"><?=anchor('control-panel/pages/family/children','Дети');?></li>
 							<li num="series-family"><?=anchor('control-panel/pages/family/series-family','Серия');?></li>
+						<?php elseif($this->uri->segment(3) == 'landscape'):?>
+							<li num="architecture"><?=anchor('control-panel/pages/landscape/architecture','Архитектура');?></li>
 						<?php endif;?>
 						</ul>
 					</div>

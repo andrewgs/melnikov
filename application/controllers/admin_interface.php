@@ -122,6 +122,7 @@ class Admin_interface extends MY_Controller{
 		endif;
 		redirect('control-panel');
 	}
+
 	/*************************************** end items ***********************************************/
 	
 	public function page_editor(){

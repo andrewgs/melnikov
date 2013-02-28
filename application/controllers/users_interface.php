@@ -37,6 +37,11 @@ class Users_interface extends MY_Controller{
 		$this->load->view("users_interface/pages/page-images",array('images'=>$this->images->read_records('landscape')));
 	}
 	
+	public function architecture(){
+		
+		$this->load->view("users_interface/pages/page-images",array('images'=>$this->images->read_records('architecture')));
+	}
+	
 	public function reportage(){
 		
 		$pagevar = array(

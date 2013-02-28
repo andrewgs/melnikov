@@ -16,6 +16,7 @@ $head_variable = array(
 	'portrait' => array('title'=>'Сайт Дмитрия Мельникова | Портрет','description'=>'','keywords'=>''),
 	'fashion' => array('title'=>'Сайт Дмитрия Мельникова | Fashion','description'=>'','keywords'=>''),
 	'landscape' => array('title'=>'Сайт Дмитрия Мельникова | Пейзаж','description'=>'','keywords'=>''),
+	'landscape_architecture' => array('title'=>'Сайт Дмитрия Мельникова | Архитектура','description'=>'','keywords'=>''),
 	'reportage' => array('title'=>'Сайт Дмитрия Мельникова | Репортаж','description'=>'','keywords'=>''),
 	'genre' => array('title'=>'Сайт Дмитрия Мельникова | Жанр','description'=>'','keywords'=>''),
 	'photographer' => array('title'=>'Сайт Дмитрия Мельникова | О фотографе','description'=>'','keywords'=>''),

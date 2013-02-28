@@ -14,5 +14,8 @@
 	<?php if($this->uri->segment(1) == 'marriage' || $this->uri->segment(1) == 'family'):?>
 		$("#sub_navigation li[class='<?=$this->uri->segment(2);?>']").addClass('active');
 	<?php endif;?>
+	<?php if($this->uri->segment(1) == 'landscape'):?>
+		$("#sub_navigation li[class='<?=$this->uri->segment(2);?>']").addClass('active');
+	<?php endif;?>
 	});
 </script>

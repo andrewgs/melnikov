@@ -30,6 +30,7 @@ $route['family']					= "users_interface/family";
 $route['genre']						= "users_interface/genre";
 $route['fashion']					= "users_interface/fashion";
 $route['landscape']					= "users_interface/landscape";
+$route['landscape/architecture']	= "users_interface/architecture";
 $route['reportage']					= "users_interface/reportage";
 $route['photographer']				= "users_interface/photographer";
 
@@ -51,12 +52,10 @@ $route['control-panel/pages/portrait']			= "admin_interface/page_images";
 $route['control-panel/pages/fashion']			= "admin_interface/page_images";
 $route['control-panel/pages/landscape']			= "admin_interface/page_images";
 $route['control-panel/pages/genre']				= "admin_interface/page_images";
-
 $route['control-panel/pages/reportage']			= "admin_interface/text_items";
-$route['control-panel/pages/reportage/:any']	= "admin_interface/text_items";
 $route['control-panel/pages/photographer']		= "admin_interface/text_items";
-$route['control-panel/pages/photographer/:any'] = "admin_interface/text_items";
 
+$route['control-panel/pages/landscape/:any']	= "admin_interface/page_images";
 /* insert items*/
 $route['control-panel/pages/:any/insert-item'] = "admin_interface/insert_item";
 $route['control-panel/pages/:any/update-item/:num'] = "admin_interface/update_item";

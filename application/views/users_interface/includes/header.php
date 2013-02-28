@@ -16,6 +16,8 @@
 				<?php elseif($this->uri->segment(1) == 'family'):?>
 					<li class="children"><?=anchor('family/children','Дети');?></li>
 					<li class="series-family"><?=anchor('family/series-family','Серия');?></li>
+				<?php elseif($this->uri->segment(1) == 'landscape'):?>
+					<li class="architecture"><?=anchor('landscape/architecture','Архитектура');?></li>
 				<?php endif;?>
 				</ul>
 			</nav>
