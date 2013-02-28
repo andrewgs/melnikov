@@ -24,7 +24,7 @@
 					<?php $this->load->helper('text');?>
 					<div class="infinite-scroll">
 					<?php for($i=0;$i<count($content);$i++):?>
-						<h4><?=$content[$i]['title'];?></h4>
+						<h2><?=$content[$i]['title'];?></h2>
 						<?=blog_limiter($content[$i]['content']);?>
 					<?php endfor;?>
 					<?php if($this->uri->total_segments() == 2):?>

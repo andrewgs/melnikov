@@ -6,7 +6,7 @@
 			<li num="family"><?=anchor('control-panel/pages/family','Семья');?></li>
 			<li num="portrait"><?=anchor('control-panel/pages/portrait','Портрет');?></li>
 			<li num="fashion"><?=anchor('control-panel/pages/fashion','Fashion');?></li>
-			<li num="landscape"><?=anchor('control-panel/pages/landscape','Пейзаж');?></li>
+			<li num="landscape"><?=anchor('control-panel/pages/landscape','Природа');?></li>
 			<li num="reportage"><?=anchor('control-panel/pages/reportage','Репортаж');?></li>
 			<li num="genre"><?=anchor('control-panel/pages/genre','Жанр');?></li>
 			<li num="photographer"><?=anchor('control-panel/pages/photographer','О фотографе');?></li>

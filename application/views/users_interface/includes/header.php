@@ -3,7 +3,7 @@
 		<div class="span9">
 			<img id="logo" src="<?=site_url('img/logo.jpg');?>">
 		</div>
-		<div class="span11">
+		<div class="span12">
 			<nav class="header-nav">
 				<ul id="sub_navigation">
 				<?php if($this->uri->uri_string() == '' || $this->uri->segment(1) == 'marriage'):?>
